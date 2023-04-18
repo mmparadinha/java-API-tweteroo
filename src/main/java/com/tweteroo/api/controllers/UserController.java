@@ -10,13 +10,13 @@ import com.tweteroo.api.services.UserService;
 
 import jakarta.validation.Valid;
 
-// import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
-// @CrossOrigin(origins = "http://localhost:8000")
-@RequestMapping("/sign-up")
+@CrossOrigin
+@RequestMapping("/api/auth/sign-up")
 public class UserController {
 
   @Autowired

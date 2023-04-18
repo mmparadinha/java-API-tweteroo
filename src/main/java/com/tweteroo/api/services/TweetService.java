@@ -21,4 +21,8 @@ public class TweetService {
   public void create(Tweet data) {
     repository.save(data);
   }
+
+  public List<Tweet> findUserTweets(String username) {
+    return repository.findByUsername(username);
+  }
 }
